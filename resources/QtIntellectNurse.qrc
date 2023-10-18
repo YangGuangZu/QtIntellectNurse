@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/home/arm.png</file>
+        <file>image/home/closestool.png</file>
+        <file>image/home/closestool2.png</file>
+        <file>image/home/common.png</file>
+        <file>image/home/detection.png</file>
+        <file>image/home/droplet.png</file>
+        <file>image/home/home.png</file>
+        <file>image/home/liuchengicon.png</file>
+        <file>image/home/medical 57.png</file>
+        <file>image/home/mianimg.png</file>
+        <file>image/home/return.png</file>
+        <file>image/home/run.png</file>
+        <file>image/home/setting.png</file>
+        <file>image/home/stop.png</file>
+        <file>image/home/thermometer.png</file>
+        <file>image/home/toilet.png</file>
+        <file>image/home/video.png</file>
+        <file>image/home/volume.png</file>
+        <file>image/home/waibiankuang.png</file>
+        <file>image/home/wifi.png</file>
+        <file>image/home/xiaobian.png</file>
+    </qresource>
+</RCC>

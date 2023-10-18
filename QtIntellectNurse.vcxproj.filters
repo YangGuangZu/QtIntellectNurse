@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source Files\View">
+      <UniqueIdentifier>{c27e8d03-4ce0-47c6-b840-859c3636bbdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\QtIntellectNurse">
+      <UniqueIdentifier>{f0cd0291-2af0-4d0b-b6a9-0733d53b9512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{e22608bc-24d3-471f-b6f7-139de77c6e9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\PixmapWidget">
+      <UniqueIdentifier>{3ba44dbc-ad93-4a11-b083-96a7b0491b3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tool">
+      <UniqueIdentifier>{ce01c36b-f043-4fae-a443-c6a86e12718d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tool\UICommonTool">
+      <UniqueIdentifier>{418486e0-447e-4ef1-a833-34382ce5aa66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\PixmapWidget\PixmapWidget.cpp">
+      <Filter>Source Files\Component\PixmapWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\QtIntellectNurse\QtIntellectNurse.cpp">
+      <Filter>Source Files\View\QtIntellectNurse</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\UiCommonTool\UiCommonTool.cpp">
+      <Filter>Source Files\Tool\UICommonTool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="source\Component\PixmapWidget\PixmapWidget.h">
+      <Filter>Source Files\Component\PixmapWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\QtIntellectNurse\QtIntellectNurse.h">
+      <Filter>Source Files\View\QtIntellectNurse</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\QtIntellectNurse.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resources\QtIntellectNurse.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="resources\qss.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\QtIntellectNurse.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="source\View\QtIntellectNurse\QtIntellectNurse.ui">
+      <Filter>Source Files\View\QtIntellectNurse</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Tool\UiCommonTool\UiCommonTool.h">
+      <Filter>Source Files\Tool\UICommonTool</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

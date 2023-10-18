@@ -1,0 +1,46 @@
+QPalette {
+    background: #F2F2F2;
+}
+
+QAbstractButton {
+    background-color: transparent;
+}
+
+QScrollArea {
+    outline: 0px;
+    border: 0px solid #7F9AB8;
+    background-color:transparent;
+}
+
+QWidget[Style_Widget="Style_Base_Widget"] {
+    background-color: #E8E5E0;
+}
+
+QWidget[Style_Widget="Style_Title_Widget"] {
+    background-color: #BABABA;
+}
+
+QWidget[Style_Widget="Style_Edge_Widget"] {
+    background-color: #303030;
+}
+
+QWidget[Style_Widget="Style_Transparent_Widget"] {
+    background-color: transparent;
+}
+
+QWidget[Style_Widget="Style_Home_Bottom_Tip_Widget"] {
+    border-radius: 5px;
+    background-color: #464646;
+}
+
+QWidget[Style_Widget="Style_Special_Bottom_Widget"] {
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    background-color: #E8E5E0;
+}
+
+QWidget[Style_Label="Style_White_Widget"] {
+    color: #ffffff;
+}
