@@ -31,13 +31,13 @@
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>6.2.4_msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtInstall>msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets;multimedia;serialbus;serialport;sql;charts</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
-    <QtInstall>6.2.4_msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtInstall>msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets;concurrent;multimedia;serialbus;serialport;sql;charts</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -56,10 +56,30 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <IncludePath>$(ProjectDir)source;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>$(ProjectDir)source;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>$(ProjectDir)source;$(ProjectDir)resources\sqlite3;$(QTDIR)\include\QtMultimediaWidgets;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(QTDIR)\lib;$(ProjectDir)resources\third_party\sqlite3\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IncludePath>$(ProjectDir)source;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ProjectDir)source;$(ProjectDir)resources\sqlite3\include;$(QTDIR)\include\QtMultimediaWidgets;$(ProjectDir)resources\sqlite3;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(OutDir);$(QTDIR)\lib;$(ProjectDir)resources\third_party\sqlite3\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <Link>
+      <AdditionalDependencies>Qt6MultimediaWidgetsd.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>Qt6MultimediaWidgets.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -85,9 +105,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\Communication\CommunicationRtu.cpp" />
+    <ClCompile Include="source\Component\BasicPopupView\BasicPopupView.cpp" />
+    <ClCompile Include="source\Component\CustProgressBar\CustProgressBar.cpp" />
     <ClCompile Include="source\Component\PixmapWidget\PixmapWidget.cpp" />
+    <ClCompile Include="source\Component\PopupTips\PopupManager.cpp" />
+    <ClCompile Include="source\Component\PopupTips\PopupTip.cpp" />
+    <ClCompile Include="source\Component\StorageWidget\StorageWidget.cpp" />
+    <ClCompile Include="source\Component\VideoView\VideoStorageView\VideoStorageView.cpp" />
+    <ClCompile Include="source\Component\VideoView\VideoView.cpp" />
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\AppDataManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\APPSqlData\APPSqlData.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\BasicConfigManager\BasicConfigManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\BasicSqlData\BasicSqlData.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\CaregiverManager\CaregiverManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\CommunicateManager\CommunicateManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\NetworkManager\NetworkManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\ScreenManager\ScreenManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\UserManager\UserManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\VideoManager\VideoManager.cpp" />
+    <ClCompile Include="source\Manager\AppGuiManager\AppGuiManager.cpp" />
+    <ClCompile Include="source\Manager\AppStatusManager\AppStatusManager.cpp" />
+    <ClCompile Include="source\Manager\MachineManager\BasicMachine\BasicMachine.cpp" />
+    <ClCompile Include="source\Manager\MachineManager\MachineManager.cpp" />
     <ClCompile Include="source\Tool\UiCommonTool\UiCommonTool.cpp" />
+    <ClCompile Include="source\View\HomeView\HomeView.cpp" />
+    <ClCompile Include="source\View\IntellectArmView\IntellectArmView.cpp" />
+    <ClCompile Include="source\View\IntellectBedView\IntellectBedView.cpp" />
+    <ClCompile Include="source\View\IntellectSettingsView\IntellectSettingsView.cpp" />
+    <ClCompile Include="source\View\IntellectSignView\IntellectSignView.cpp" />
+    <ClCompile Include="source\View\IntellectToiletView\IntellectToiletView.cpp" />
+    <ClCompile Include="source\View\IntellectVideoView\IntellectVideoView.cpp" />
+    <ClCompile Include="source\View\QtIntellectNurse\BottomProcess\BottomProcess.cpp" />
     <ClCompile Include="source\View\QtIntellectNurse\QtIntellectNurse.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -107,10 +157,54 @@
     <QtMoc Include="source\View\QtIntellectNurse\QtIntellectNurse.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="source\Component\BasicPopupView\BasicPopupView.ui" />
+    <QtUic Include="source\Component\PopupTips\PopupTip.ui" />
+    <QtUic Include="source\Component\VideoView\VideoStorageView\VideoStorageView.ui" />
+    <QtUic Include="source\Component\VideoView\VideoView.ui" />
+    <QtUic Include="source\View\HomeView\HomeView.ui" />
+    <QtUic Include="source\View\IntellectArmView\IntellectArmView.ui" />
+    <QtUic Include="source\View\IntellectBedView\IntellectBedView.ui" />
+    <QtUic Include="source\View\IntellectSettingsView\IntellectSettingsView.ui" />
+    <QtUic Include="source\View\IntellectSignView\IntellectSignView.ui" />
+    <QtUic Include="source\View\IntellectToiletView\IntellectToiletView.ui" />
+    <QtUic Include="source\View\IntellectVideoView\IntellectVideoView.ui" />
+    <QtUic Include="source\View\QtIntellectNurse\BottomProcess\BottomProcess.ui" />
     <QtUic Include="source\View\QtIntellectNurse\QtIntellectNurse.ui" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="source\View\QtIntellectNurse\BottomProcess\BottomProcess.h" />
+    <QtMoc Include="source\View\IntellectVideoView\IntellectVideoView.h" />
+    <QtMoc Include="source\View\IntellectToiletView\IntellectToiletView.h" />
+    <QtMoc Include="source\View\IntellectSignView\IntellectSignView.h" />
+    <QtMoc Include="source\View\IntellectSettingsView\IntellectSettingsView.h" />
+    <QtMoc Include="source\View\IntellectBedView\IntellectBedView.h" />
+    <QtMoc Include="source\View\IntellectArmView\IntellectArmView.h" />
+    <QtMoc Include="source\Manager\AppGuiManager\AppGuiManager.h" />
+    <QtMoc Include="source\Manager\AppStatusManager\AppStatusManager.h" />
+    <QtMoc Include="source\Communication\CommunicationRtu.h" />
+    <QtMoc Include="source\Component\PopupTips\PopupManager.h" />
+    <QtMoc Include="source\Component\PopupTips\PopupTip.h" />
+    <QtMoc Include="source\Communication\CommunicationDefine.h" />
+    <QtMoc Include="source\Component\CustProgressBar\CustProgressBar.h" />
+    <QtMoc Include="source\Component\BasicPopupView\BasicPopupView.h" />
+    <QtMoc Include="source\Component\VideoView\VideoView.h" />
+    <QtMoc Include="source\Component\StorageWidget\StorageWidget.h" />
+    <QtMoc Include="source\Component\VideoView\VideoStorageView\VideoStorageView.h" />
+    <ClInclude Include="source\Define\AppDefine.h" />
+    <QtMoc Include="source\Manager\AppDataManager\AppDataManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\APPSqlData\APPSqlData.h" />
+    <QtMoc Include="source\Manager\AppDataManager\UserManager\UserManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\CaregiverManager\CaregiverManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\NetworkManager\NetworkManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\CommunicateManager\CommunicateManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\BasicConfigManager\BasicConfigManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\VideoManager\VideoManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\ScreenManager\ScreenManager.h" />
+    <QtMoc Include="source\Manager\AppDataManager\BasicSqlData\BasicSqlData.h" />
+    <QtMoc Include="source\Manager\MachineManager\MachineManager.h" />
+    <QtMoc Include="source\Manager\MachineManager\BasicMachine\BasicMachine.h" />
     <ClInclude Include="source\Tool\UiCommonTool\UiCommonTool.h" />
+    <QtMoc Include="source\View\HomeView\HomeView.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

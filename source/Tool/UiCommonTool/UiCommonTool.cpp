@@ -190,13 +190,12 @@ QRect UICommonTool::drawAlignCenterPixmap(QPainter * painter, QRect & objRect, c
 QRect UICommonTool::drawAlignCenterText(QPainter * painter, QRect & objRect,const QFont & font ,const QString & oriString)
 {
 	painter->save();
-
+	painter->setFont(font);
 	QString displayStr = fontMetricsElidedText(font, oriString, objRect.width());
 	QFontMetrics fontWidth(font);
 
 	QRect draw_rect = objRect;
 	QRect label_rect = fontWidth.boundingRect(displayStr);
-
 	painter->drawText(objRect, Qt::AlignCenter , displayStr);
 
 	painter->restore();

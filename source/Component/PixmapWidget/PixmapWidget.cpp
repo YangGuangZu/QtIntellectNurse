@@ -19,7 +19,12 @@ PixmapWidget::PixmapWidget(const QString& icon, QWidget* parent)
     setPixmap(QPixmap(icon));
 }
 
-void PixmapWidget::setPixmap(const QPixmap& icon) 
+QPixmap PixmapWidget::pixmap() const
+{
+    return m_pixmap;
+}
+
+void PixmapWidget::setPixmap(const QPixmap& icon)
 {
     m_pixmap = icon;
     update();
@@ -43,9 +48,19 @@ void PixmapWidget::paintEvent(QPaintEvent* event) {
 		drawRect.moveCenter(objRect.center());
 		UICommonTool::drawAlignCenterPixmap(&painter, drawRect, m_pixmap);
     }
+    //else if (m_sizeDraw.width() > width() || m_sizeDraw.height() > height())
+    //{
+    //    UICommonTool::drawAlignCenterPixmap(&painter, objRect, m_pixmap);
+    //}
     else
     {
         UICommonTool::drawAlignCenterPixmap(&painter, objRect, m_pixmap);
     }
 
+}
+
+void PixmapWidget::mousePressEvent(QMouseEvent* event)
+{
+    emit clicked();
+    return QWidget::mousePressEvent(event);
 }

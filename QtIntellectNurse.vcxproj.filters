@@ -39,6 +39,102 @@
     <Filter Include="Source Files\Tool\UICommonTool">
       <UniqueIdentifier>{418486e0-447e-4ef1-a833-34382ce5aa66}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\View\HomeView">
+      <UniqueIdentifier>{f399e1ac-aabe-4e4e-ab6a-4b4da144b658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager">
+      <UniqueIdentifier>{ec92351a-2aaf-483f-b1c1-af5f55bbf802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\AppStatusManager">
+      <UniqueIdentifier>{fed2934e-50df-40ef-b464-f87dba4ce43d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\AppGuiManager">
+      <UniqueIdentifier>{9f65f770-3b15-4c70-88f1-310e70e94c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Define">
+      <UniqueIdentifier>{7a2bba0d-d0ae-410a-baf0-75aa7503fc6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectArmView">
+      <UniqueIdentifier>{5e121061-9154-45b5-abf0-30c8b8b656b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectBedView">
+      <UniqueIdentifier>{d377b6cf-12b4-474a-85cd-bba8f79a4bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectSettingsView">
+      <UniqueIdentifier>{9c08bf39-ceaa-449f-877d-667726fa0ff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectSignView">
+      <UniqueIdentifier>{60d44cbe-dc6a-45ce-a760-f48e29641d59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectToiletView">
+      <UniqueIdentifier>{8ebed639-98e9-4644-b1ce-ed4f1d0bb427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectVideoView">
+      <UniqueIdentifier>{b1f99205-066e-44d2-8eae-15d07a9feadc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\QtIntellectNurse\BottomProcess">
+      <UniqueIdentifier>{225f6af9-e50b-4de0-a4d4-d13926971d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Communication">
+      <UniqueIdentifier>{9beeba04-b48f-422d-a0ce-effe2c01c806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\PopupTips">
+      <UniqueIdentifier>{03023e44-805f-4f3c-a02b-ef357e047afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\CustProgressBar">
+      <UniqueIdentifier>{30f9bee7-7398-46cd-8bf2-251cbd935f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager">
+      <UniqueIdentifier>{08ee546a-6ed8-4ac1-9d64-f98411f1062c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\APPSqlData">
+      <UniqueIdentifier>{d4601a14-0458-43b0-85e6-3b1e5fd850df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\UserManager">
+      <UniqueIdentifier>{b0c1df2f-0b2b-4b98-8ef3-2d15f13efa81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\CaregiverManager">
+      <UniqueIdentifier>{cd28de60-c7bc-467d-9104-1724a2afc757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\ScreenManager">
+      <UniqueIdentifier>{e0380b6e-0c3a-457e-af5c-73fe522474e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\NetworkManager">
+      <UniqueIdentifier>{2d176274-faa5-4d6c-b584-87ec8c4fdc8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\CommunicateManager">
+      <UniqueIdentifier>{41415f3f-b4ad-4ff9-b5c1-2770e851189a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\BasicConfigManager">
+      <UniqueIdentifier>{8ccb904f-2dae-4a70-8a9d-bd5b1a21da56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\VideoManager">
+      <UniqueIdentifier>{fcba8c4a-6160-4e78-95f4-60a88a8599d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\BasicSqlData">
+      <UniqueIdentifier>{9a879e48-ea4a-482b-939d-f7645ea41748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\CommonView">
+      <UniqueIdentifier>{cbfd18e3-4907-49c6-9433-b38311d4e824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\BasicPopupView">
+      <UniqueIdentifier>{82a59ad8-2723-4162-9f1e-b1986bec4a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\VideoView">
+      <UniqueIdentifier>{365c076d-5a0e-4606-b66a-707d602957b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\StorageWidget">
+      <UniqueIdentifier>{e6693da7-719e-4bd8-bc6f-94b73ff4214a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\VideoView\VideoStorageView">
+      <UniqueIdentifier>{63b6bc12-ae85-49ad-b895-9b3b1a16fcaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\MachineManager">
+      <UniqueIdentifier>{7647ab07-6ff1-4199-8948-19b0b12a4fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\MachineManager\BasicMachine">
+      <UniqueIdentifier>{65cd33e4-1f34-4547-898e-53117a6f3361}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -53,6 +149,96 @@
     <ClCompile Include="source\Tool\UiCommonTool\UiCommonTool.cpp">
       <Filter>Source Files\Tool\UICommonTool</Filter>
     </ClCompile>
+    <ClCompile Include="source\View\HomeView\HomeView.cpp">
+      <Filter>Source Files\View\HomeView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectArmView\IntellectArmView.cpp">
+      <Filter>Source Files\View\IntellectArmView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectBedView\IntellectBedView.cpp">
+      <Filter>Source Files\View\IntellectBedView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectSettingsView\IntellectSettingsView.cpp">
+      <Filter>Source Files\View\IntellectSettingsView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectSignView\IntellectSignView.cpp">
+      <Filter>Source Files\View\IntellectSignView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectToiletView\IntellectToiletView.cpp">
+      <Filter>Source Files\View\IntellectToiletView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectVideoView\IntellectVideoView.cpp">
+      <Filter>Source Files\View\IntellectVideoView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\QtIntellectNurse\BottomProcess\BottomProcess.cpp">
+      <Filter>Source Files\View\QtIntellectNurse\BottomProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Communication\CommunicationRtu.cpp">
+      <Filter>Source Files\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\PopupTips\PopupManager.cpp">
+      <Filter>Source Files\Component\PopupTips</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\PopupTips\PopupTip.cpp">
+      <Filter>Source Files\Component\PopupTips</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\CustProgressBar\CustProgressBar.cpp">
+      <Filter>Source Files\Component\CustProgressBar</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppGuiManager\AppGuiManager.cpp">
+      <Filter>Source Files\Manager\AppGuiManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppStatusManager\AppStatusManager.cpp">
+      <Filter>Source Files\Manager\AppStatusManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\AppDataManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\APPSqlData\APPSqlData.cpp">
+      <Filter>Source Files\Manager\APPDataManager\APPSqlData</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\UserManager\UserManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\CaregiverManager\CaregiverManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\CaregiverManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\NetworkManager\NetworkManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\NetworkManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\CommunicateManager\CommunicateManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\CommunicateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\BasicConfigManager\BasicConfigManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\BasicConfigManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\VideoManager\VideoManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\VideoManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\ScreenManager\ScreenManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\ScreenManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\BasicSqlData\BasicSqlData.cpp">
+      <Filter>Source Files\Manager\APPDataManager\BasicSqlData</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\BasicPopupView\BasicPopupView.cpp">
+      <Filter>Source Files\Component\BasicPopupView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\VideoView\VideoView.cpp">
+      <Filter>Source Files\Component\VideoView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\StorageWidget\StorageWidget.cpp">
+      <Filter>Source Files\Component\StorageWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\VideoView\VideoStorageView\VideoStorageView.cpp">
+      <Filter>Source Files\Component\VideoView\VideoStorageView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\MachineManager\MachineManager.cpp">
+      <Filter>Source Files\Manager\MachineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\MachineManager\BasicMachine\BasicMachine.cpp">
+      <Filter>Source Files\Manager\MachineManager\BasicMachine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="source\Component\PixmapWidget\PixmapWidget.h">
@@ -60,6 +246,99 @@
     </QtMoc>
     <QtMoc Include="source\View\QtIntellectNurse\QtIntellectNurse.h">
       <Filter>Source Files\View\QtIntellectNurse</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\HomeView\HomeView.h">
+      <Filter>Source Files\View\HomeView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectArmView\IntellectArmView.h">
+      <Filter>Source Files\View\IntellectArmView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectBedView\IntellectBedView.h">
+      <Filter>Source Files\View\IntellectBedView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectSettingsView\IntellectSettingsView.h">
+      <Filter>Source Files\View\IntellectSettingsView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectSignView\IntellectSignView.h">
+      <Filter>Source Files\View\IntellectSignView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectToiletView\IntellectToiletView.h">
+      <Filter>Source Files\View\IntellectToiletView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectVideoView\IntellectVideoView.h">
+      <Filter>Source Files\View\IntellectVideoView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\QtIntellectNurse\BottomProcess\BottomProcess.h">
+      <Filter>Source Files\View\QtIntellectNurse\BottomProcess</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Communication\CommunicationRtu.h">
+      <Filter>Source Files\Communication</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\PopupTips\PopupManager.h">
+      <Filter>Source Files\Component\PopupTips</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\PopupTips\PopupTip.h">
+      <Filter>Source Files\Component\PopupTips</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Communication\CommunicationDefine.h">
+      <Filter>Source Files\Communication</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\CustProgressBar\CustProgressBar.h">
+      <Filter>Source Files\Component\CustProgressBar</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppGuiManager\AppGuiManager.h">
+      <Filter>Source Files\Manager\AppGuiManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppStatusManager\AppStatusManager.h">
+      <Filter>Source Files\Manager\AppStatusManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\AppDataManager.h">
+      <Filter>Source Files\Manager\APPDataManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\APPSqlData\APPSqlData.h">
+      <Filter>Source Files\Manager\APPDataManager\APPSqlData</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\UserManager\UserManager.h">
+      <Filter>Source Files\Manager\APPDataManager\UserManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\CaregiverManager\CaregiverManager.h">
+      <Filter>Source Files\Manager\APPDataManager\CaregiverManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\NetworkManager\NetworkManager.h">
+      <Filter>Source Files\Manager\APPDataManager\NetworkManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\CommunicateManager\CommunicateManager.h">
+      <Filter>Source Files\Manager\APPDataManager\CommunicateManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\BasicConfigManager\BasicConfigManager.h">
+      <Filter>Source Files\Manager\APPDataManager\BasicConfigManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\VideoManager\VideoManager.h">
+      <Filter>Source Files\Manager\APPDataManager\VideoManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\ScreenManager\ScreenManager.h">
+      <Filter>Source Files\Manager\APPDataManager\ScreenManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\BasicSqlData\BasicSqlData.h">
+      <Filter>Source Files\Manager\APPDataManager\BasicSqlData</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\BasicPopupView\BasicPopupView.h">
+      <Filter>Source Files\Component\BasicPopupView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\VideoView\VideoView.h">
+      <Filter>Source Files\Component\VideoView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\StorageWidget\StorageWidget.h">
+      <Filter>Source Files\Component\StorageWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\VideoView\VideoStorageView\VideoStorageView.h">
+      <Filter>Source Files\Component\VideoView\VideoStorageView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\MachineManager\MachineManager.h">
+      <Filter>Source Files\Manager\MachineManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\MachineManager\BasicMachine\BasicMachine.h">
+      <Filter>Source Files\Manager\MachineManager\BasicMachine</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -84,10 +363,49 @@
     <QtUic Include="source\View\QtIntellectNurse\QtIntellectNurse.ui">
       <Filter>Source Files\View\QtIntellectNurse</Filter>
     </QtUic>
+    <QtUic Include="source\View\HomeView\HomeView.ui">
+      <Filter>Source Files\View\HomeView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectArmView\IntellectArmView.ui">
+      <Filter>Source Files\View\IntellectArmView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectBedView\IntellectBedView.ui">
+      <Filter>Source Files\View\IntellectBedView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectSettingsView\IntellectSettingsView.ui">
+      <Filter>Source Files\View\IntellectSettingsView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectSignView\IntellectSignView.ui">
+      <Filter>Source Files\View\IntellectSignView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectToiletView\IntellectToiletView.ui">
+      <Filter>Source Files\View\IntellectToiletView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectVideoView\IntellectVideoView.ui">
+      <Filter>Source Files\View\IntellectVideoView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\QtIntellectNurse\BottomProcess\BottomProcess.ui">
+      <Filter>Source Files\View\QtIntellectNurse\BottomProcess</Filter>
+    </QtUic>
+    <QtUic Include="source\Component\PopupTips\PopupTip.ui">
+      <Filter>Source Files\Component\PopupTips</Filter>
+    </QtUic>
+    <QtUic Include="source\Component\BasicPopupView\BasicPopupView.ui">
+      <Filter>Source Files\Component\BasicPopupView</Filter>
+    </QtUic>
+    <QtUic Include="source\Component\VideoView\VideoView.ui">
+      <Filter>Source Files\Component\VideoView</Filter>
+    </QtUic>
+    <QtUic Include="source\Component\VideoView\VideoStorageView\VideoStorageView.ui">
+      <Filter>Source Files\Component\VideoView\VideoStorageView</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Tool\UiCommonTool\UiCommonTool.h">
       <Filter>Source Files\Tool\UICommonTool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Define\AppDefine.h">
+      <Filter>Source Files\Define</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeViewClass</class>
+ <widget class="QWidget" name="HomeViewClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1570</width>
+    <height>839</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HomeView</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="7,3">
+   <item>
+    <widget class="QWidget" name="widget_8" native="true">
+     <property name="Style_Widget" stdset="0">
+      <string>Style_White_Widget</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <property name="spacing">
+       <number>30</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_13" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QAbstractButton {
+	padding-top: 20px;
+    border-radius: 5px;
+    border: 0px solid #525252;
+    background-color: #EEF2FB;
+}
+QAbstractButton:checked {
+	
+	background-image: url(:/image/common/蓝色选中.png);
+}</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QToolButton" name="toolButton_17">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>助便</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../resources/QtIntellectNurse.qrc">
+             <normaloff>:/image/common/助便.png</normaloff>:/image/common/助便.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>134</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QToolButton" name="toolButton_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>大便</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../resources/QtIntellectNurse.qrc">
+             <normaloff>:/image/common/大便.png</normaloff>:/image/common/大便.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>134</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="2">
+          <widget class="QToolButton" name="toolButton_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>体位</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../resources/QtIntellectNurse.qrc">
+             <normaloff>:/image/common/体位.png</normaloff>:/image/common/体位.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>134</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="6">
+          <widget class="QToolButton" name="toolButton_18">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>小便</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../resources/QtIntellectNurse.qrc">
+             <normaloff>:/image/common/小便.png</normaloff>:/image/common/小便.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>134</width>
+             <height>82</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(238, 242, 251);</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="PixmapWidget" name="widget_11" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_12" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QAbstractButton {
+	padding-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #525252;
+    background-color: #FFFFFF;
+}</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="PixmapWidget" name="widget_17" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>130</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="PixmapWidget" name="widget_6" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>130</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="PixmapWidget" name="widget_5" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>130</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_9" native="true">
+     <property name="Style_Widget" stdset="0">
+      <string>Style_White_Widget</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:0px solid #5F92B2;
+border-left:2px solid #007AF4;</string>
+           </property>
+           <property name="text">
+            <string>日常信息</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>编辑列表</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="styleSheet">
+         <string notr="true">
+QTableWidget
+{
+	alternate-background-color:rgb(244,246,248);
+	background-color:rgb(255,255,255);
+}
+QTableWidget::Item{
+	border:0px solid rgb(0,0,0);
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::NoSelection</enum>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::NoPen</enum>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>时间</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>内容</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>状态</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="background">
+          <color>
+           <red>244</red>
+           <green>246</green>
+           <blue>248</blue>
+          </color>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>7:00</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>起床洗漱</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>7:15</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>诱导排便</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>7:30</string>
+         </property>
+        </item>
+        <item row="2" column="1">
+         <property name="text">
+          <string>两便清洗</string>
+         </property>
+        </item>
+        <item row="2" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="3" column="0">
+         <property name="text">
+          <string>8:00</string>
+         </property>
+        </item>
+        <item row="3" column="1">
+         <property name="text">
+          <string>服药早餐</string>
+         </property>
+        </item>
+        <item row="3" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="4" column="0">
+         <property name="text">
+          <string>9:00</string>
+         </property>
+        </item>
+        <item row="4" column="1">
+         <property name="text">
+          <string>身体护理</string>
+         </property>
+        </item>
+        <item row="4" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="5" column="0">
+         <property name="text">
+          <string>9:30</string>
+         </property>
+        </item>
+        <item row="5" column="1">
+         <property name="text">
+          <string>户外活动</string>
+         </property>
+        </item>
+        <item row="5" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="6" column="0">
+         <property name="text">
+          <string>11:00</string>
+         </property>
+        </item>
+        <item row="6" column="1">
+         <property name="text">
+          <string>返回喝水</string>
+         </property>
+        </item>
+        <item row="6" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="7" column="0">
+         <property name="text">
+          <string>12:00</string>
+         </property>
+        </item>
+        <item row="7" column="1">
+         <property name="text">
+          <string>午餐</string>
+         </property>
+        </item>
+        <item row="7" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="8" column="0">
+         <property name="text">
+          <string>14:00</string>
+         </property>
+        </item>
+        <item row="8" column="1">
+         <property name="text">
+          <string>身体护理</string>
+         </property>
+        </item>
+        <item row="8" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="9" column="0">
+         <property name="text">
+          <string>14:30</string>
+         </property>
+        </item>
+        <item row="9" column="1">
+         <property name="text">
+          <string>视听娱乐</string>
+         </property>
+        </item>
+        <item row="9" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="10" column="0">
+         <property name="text">
+          <string>15:30</string>
+         </property>
+        </item>
+        <item row="10" column="1">
+         <property name="text">
+          <string>就医</string>
+         </property>
+        </item>
+        <item row="10" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="11" column="0">
+         <property name="text">
+          <string>16:30</string>
+         </property>
+        </item>
+        <item row="11" column="1">
+         <property name="text">
+          <string>喝水</string>
+         </property>
+        </item>
+        <item row="11" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="12" column="0">
+         <property name="text">
+          <string>17:00</string>
+         </property>
+        </item>
+        <item row="12" column="1">
+         <property name="text">
+          <string>身体护理</string>
+         </property>
+        </item>
+        <item row="12" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="13" column="0">
+         <property name="text">
+          <string>18:00</string>
+         </property>
+        </item>
+        <item row="13" column="1">
+         <property name="text">
+          <string>服药晚餐</string>
+         </property>
+        </item>
+        <item row="13" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="14" column="0">
+         <property name="text">
+          <string>19:00</string>
+         </property>
+        </item>
+        <item row="14" column="1">
+         <property name="text">
+          <string>亲情连线</string>
+         </property>
+        </item>
+        <item row="14" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="15" column="0">
+         <property name="text">
+          <string>20:00</string>
+         </property>
+        </item>
+        <item row="15" column="1">
+         <property name="text">
+          <string>喝水洗澡</string>
+         </property>
+        </item>
+        <item row="15" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="16" column="0">
+         <property name="text">
+          <string>21:00</string>
+         </property>
+        </item>
+        <item row="16" column="1">
+         <property name="text">
+          <string>睡前清洗</string>
+         </property>
+        </item>
+        <item row="16" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+        <item row="17" column="0">
+         <property name="text">
+          <string>22:00</string>
+         </property>
+        </item>
+        <item row="17" column="1">
+         <property name="text">
+          <string>休息</string>
+         </property>
+        </item>
+        <item row="17" column="2">
+         <property name="text">
+          <string>未完成</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>PixmapWidget</class>
+   <extends>QWidget</extends>
+   <header>Component/PixmapWidget/PixmapWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../resources/QtIntellectNurse.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

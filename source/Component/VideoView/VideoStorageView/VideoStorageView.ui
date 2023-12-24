@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VideoStorageViewClass</class>
+ <widget class="QWidget" name="VideoStorageViewClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VideoStorageView</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+QSlider::add-page:horizontal {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(214, 214, 214, 100%);
+}
+
+QSlider::sub-page:horizontal {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(88, 168, 238, 100%);
+}
+
+QSlider::groove:horizontal {
+    height: 8px;
+    border-radius: 3px;
+    background: rgba(214, 214, 214, 100%);
+}
+
+QSlider::handle:horizontal {
+    width: 13px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 6px;
+    background: qradialgradient(spread: pad, cx: 0.5, cy: 0.5, radius: 0.5, fx: 0.5, fy: 0.5, stop: 0.6 rgba(88, 168, 238, 100%), stop: 0.8 rgba(58, 138, 208, 100%));
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>00:00/00:00</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

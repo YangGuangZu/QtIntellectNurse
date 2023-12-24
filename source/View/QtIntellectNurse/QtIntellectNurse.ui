@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1348</width>
-    <height>943</height>
+    <width>1714</width>
+    <height>1127</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -326,12 +326,12 @@
            <number>50</number>
           </property>
           <item>
-           <widget class="PixmapWidget" name="homeIcon" native="true">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+           <widget class="QToolButton" name="IntellectHomeBtn">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
             </property>
             <property name="maximumSize">
              <size>
@@ -339,6 +339,28 @@
               <height>40</height>
              </size>
             </property>
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../resources/QtIntellectNurse.qrc">
+              <normaloff>:/image/common/首页.png</normaloff>:/image/common/首页.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
            </widget>
           </item>
           <item>
@@ -422,6 +444,9 @@
        <item>
         <widget class="QWidget" name="widget_7" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="spacing">
+           <number>0</number>
+          </property>
           <item>
            <widget class="QScrollArea" name="scrollArea">
             <property name="sizePolicy">
@@ -432,9 +457,32 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>120</width>
+              <width>150</width>
               <height>0</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QAbstractButton {
+	padding-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #F9F9F9;
+    background-color: #FFFFFF;
+}
+QAbstractButton:checked {
+	background-color: transparent;
+    border: 0px solid #F9F9F9;
+}
+QWidget[MainButtonChecked = true]
+{
+	background-image: url(:/image/common/导航选中bj.png);
+}
+</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
             </property>
             <property name="widgetResizable">
              <bool>true</bool>
@@ -444,13 +492,453 @@
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>118</width>
-               <height>703</height>
+               <width>151</width>
+               <height>768</height>
               </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="Style_Widget" stdset="0">
               <string>Style_Transparent_Widget</string>
              </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QWidget" name="widget_10" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>133</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="MainButtonChecked" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QToolButton" name="IntellectBedBtn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>智能床体</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../../resources/QtIntellectNurse.qrc">
+                     <normaloff>:/image/home/medical 57.png</normaloff>:/image/home/medical 57.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">buttonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_11" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>133</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="MainButtonChecked" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QToolButton" name="IntellectToiletBtn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>智能马桶</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../../resources/QtIntellectNurse.qrc">
+                     <normaloff>:/image/home/closestool2.png</normaloff>:/image/home/closestool2.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">buttonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_12" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>133</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="MainButtonChecked" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QToolButton" name="IntellectArmBtn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>智能手臂</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../../resources/QtIntellectNurse.qrc">
+                     <normaloff>:/image/home/arm.png</normaloff>:/image/home/arm.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">buttonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_13" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>133</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="MainButtonChecked" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QToolButton" name="IntellectSignBtn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>体征监测</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../../resources/QtIntellectNurse.qrc">
+                     <normaloff>:/image/home/detection.png</normaloff>:/image/home/detection.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">buttonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_9" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>133</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="MainButtonChecked" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QToolButton" name="IntellectVideoBtn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>娱乐视频</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../../resources/QtIntellectNurse.qrc">
+                     <normaloff>:/image/home/video.png</normaloff>:/image/home/video.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">buttonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_8" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>133</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="MainButtonChecked" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QToolButton" name="IntellectSettingsBtn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>120</width>
+                     <height>120</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>系统设置</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../../../resources/QtIntellectNurse.qrc">
+                     <normaloff>:/image/home/setting.png</normaloff>:/image/home/setting.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">buttonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </widget>
           </item>
@@ -514,21 +1002,47 @@
             <property name="Style_Widget" stdset="0">
              <string>Style_Home_Bottom_Tip_Widget</string>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="spacing">
+              <number>15</number>
+             </property>
              <property name="leftMargin">
-              <number>0</number>
+              <number>10</number>
              </property>
              <property name="topMargin">
               <number>0</number>
              </property>
              <property name="rightMargin">
-              <number>0</number>
+              <number>10</number>
              </property>
              <property name="bottomMargin">
               <number>0</number>
              </property>
              <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../../resources/QtIntellectNurse.qrc">
+                 <normaloff>:/image/common/流程1.png</normaloff>:/image/common/流程1.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="QLabel" name="label_6">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="font">
                 <font>
                  <pointsize>18</pointsize>
@@ -568,6 +1082,20 @@
             <property name="Style_Widget" stdset="0">
              <string>Style_Special_Bottom_Widget</string>
             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+            </layout>
            </widget>
           </item>
          </layout>
@@ -592,4 +1120,7 @@
   <include location="../../../resources/QtIntellectNurse.qrc"/>
  </resources>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
 </ui>

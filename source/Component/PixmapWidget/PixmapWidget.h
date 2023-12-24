@@ -8,7 +8,6 @@
 /// </summary>
 class PixmapWidget : public QWidget {
     Q_OBJECT
-
 public:
     /// <summary>
     /// 构造图标展示区域 
@@ -16,7 +15,6 @@ public:
     explicit PixmapWidget(QWidget* parent = nullptr);
     explicit PixmapWidget(const QPixmap& icon, QWidget* parent = nullptr);
     explicit PixmapWidget(const QString& icon, QWidget* parent = nullptr);
-
 private:
     //图标
     QPixmap m_pixmap;
@@ -27,8 +25,14 @@ protected:
     /// 绘制接口
     /// </summary>
     /// <param name="event"></param>
-    void paintEvent(QPaintEvent* event);
+	void paintEvent(QPaintEvent* event);
+	void mousePressEvent(QMouseEvent* event) override;
 public:
+    /// <summary>
+    /// 设置图标
+    /// </summary>
+    /// <param name="icon"></param>
+    QPixmap pixmap() const;
     /// <summary>
     /// 设置图标
     /// </summary>
@@ -40,4 +44,6 @@ public:
     /// </summary>
     /// <param name="size"></param>
     void setDrawSize(const QSize& size);
+signals:
+    void clicked();
 };
