@@ -32,7 +32,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets;multimedia;serialbus;serialport;sql;charts</QtModules>
+    <QtModules>core;gui;widgets;concurrent;multimedia;serialbus;serialport;sql;charts</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -106,12 +106,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="source\Communication\CommunicationRtu.cpp" />
+    <ClCompile Include="source\Communication\ModbusRtuSerialClient\ModbusRtuSerialClient.cpp" />
+    <ClCompile Include="source\Component\BackgroundMask\BackgroundMask.cpp" />
+    <ClCompile Include="source\Component\BackgroundMask\EmptyChildView.cpp" />
     <ClCompile Include="source\Component\BasicPopupView\BasicPopupView.cpp" />
     <ClCompile Include="source\Component\CustProgressBar\CustProgressBar.cpp" />
     <ClCompile Include="source\Component\PixmapWidget\PixmapWidget.cpp" />
     <ClCompile Include="source\Component\PopupTips\PopupManager.cpp" />
     <ClCompile Include="source\Component\PopupTips\PopupTip.cpp" />
     <ClCompile Include="source\Component\StorageWidget\StorageWidget.cpp" />
+    <ClCompile Include="source\Component\TranslateComboBox\TranslateComboBox.cpp" />
     <ClCompile Include="source\Component\VideoView\VideoStorageView\VideoStorageView.cpp" />
     <ClCompile Include="source\Component\VideoView\VideoView.cpp" />
     <ClCompile Include="source\main.cpp" />
@@ -121,18 +125,26 @@
     <ClCompile Include="source\Manager\AppDataManager\BasicSqlData\BasicSqlData.cpp" />
     <ClCompile Include="source\Manager\AppDataManager\CaregiverManager\CaregiverManager.cpp" />
     <ClCompile Include="source\Manager\AppDataManager\CommunicateManager\CommunicateManager.cpp" />
+    <ClCompile Include="source\Manager\AppDataManager\MachineDataManager\MachineDataManager.cpp" />
     <ClCompile Include="source\Manager\AppDataManager\NetworkManager\NetworkManager.cpp" />
     <ClCompile Include="source\Manager\AppDataManager\ScreenManager\ScreenManager.cpp" />
     <ClCompile Include="source\Manager\AppDataManager\UserManager\UserManager.cpp" />
     <ClCompile Include="source\Manager\AppDataManager\VideoManager\VideoManager.cpp" />
+    <ClCompile Include="source\Manager\AppEnumManager\AppEnumManager.cpp" />
+    <ClCompile Include="source\Manager\AppEnumManager\CommonEnum\CommonEnum.cpp" />
     <ClCompile Include="source\Manager\AppGuiManager\AppGuiManager.cpp" />
     <ClCompile Include="source\Manager\AppStatusManager\AppStatusManager.cpp" />
     <ClCompile Include="source\Manager\MachineManager\BasicMachine\BasicMachine.cpp" />
     <ClCompile Include="source\Manager\MachineManager\MachineManager.cpp" />
+    <ClCompile Include="source\Manager\MachineManager\RtelligentModbusMachine\RtelligentModbusMachine.cpp" />
+    <ClCompile Include="source\Tool\CommonTool\CommonTool.cpp" />
     <ClCompile Include="source\Tool\UiCommonTool\UiCommonTool.cpp" />
     <ClCompile Include="source\View\HomeView\HomeView.cpp" />
     <ClCompile Include="source\View\IntellectArmView\IntellectArmView.cpp" />
     <ClCompile Include="source\View\IntellectBedView\IntellectBedView.cpp" />
+    <ClCompile Include="source\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView\CommunicateConfigView.cpp" />
+    <ClCompile Include="source\View\IntellectSettingsView\HardWareConfigView\HardWareConfigView.cpp" />
+    <ClCompile Include="source\View\IntellectSettingsView\HardWareConfigView\MachineConfigView\MachineConfigView.cpp" />
     <ClCompile Include="source\View\IntellectSettingsView\IntellectSettingsView.cpp" />
     <ClCompile Include="source\View\IntellectSignView\IntellectSignView.cpp" />
     <ClCompile Include="source\View\IntellectToiletView\IntellectToiletView.cpp" />
@@ -157,6 +169,7 @@
     <QtMoc Include="source\View\QtIntellectNurse\QtIntellectNurse.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="source\Component\BackgroundMask\EmptyChildView.ui" />
     <QtUic Include="source\Component\BasicPopupView\BasicPopupView.ui" />
     <QtUic Include="source\Component\PopupTips\PopupTip.ui" />
     <QtUic Include="source\Component\VideoView\VideoStorageView\VideoStorageView.ui" />
@@ -164,6 +177,9 @@
     <QtUic Include="source\View\HomeView\HomeView.ui" />
     <QtUic Include="source\View\IntellectArmView\IntellectArmView.ui" />
     <QtUic Include="source\View\IntellectBedView\IntellectBedView.ui" />
+    <QtUic Include="source\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView\CommunicateConfigView.ui" />
+    <QtUic Include="source\View\IntellectSettingsView\HardWareConfigView\HardWareConfigView.ui" />
+    <QtUic Include="source\View\IntellectSettingsView\HardWareConfigView\MachineConfigView\MachineConfigView.ui" />
     <QtUic Include="source\View\IntellectSettingsView\IntellectSettingsView.ui" />
     <QtUic Include="source\View\IntellectSignView\IntellectSignView.ui" />
     <QtUic Include="source\View\IntellectToiletView\IntellectToiletView.ui" />
@@ -172,6 +188,9 @@
     <QtUic Include="source\View\QtIntellectNurse\QtIntellectNurse.ui" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="source\View\IntellectSettingsView\HardWareConfigView\MachineConfigView\MachineConfigView.h" />
+    <QtMoc Include="source\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView\CommunicateConfigView.h" />
+    <QtMoc Include="source\View\IntellectSettingsView\HardWareConfigView\HardWareConfigView.h" />
     <QtMoc Include="source\View\QtIntellectNurse\BottomProcess\BottomProcess.h" />
     <QtMoc Include="source\View\IntellectVideoView\IntellectVideoView.h" />
     <QtMoc Include="source\View\IntellectToiletView\IntellectToiletView.h" />
@@ -190,6 +209,10 @@
     <QtMoc Include="source\Component\VideoView\VideoView.h" />
     <QtMoc Include="source\Component\StorageWidget\StorageWidget.h" />
     <QtMoc Include="source\Component\VideoView\VideoStorageView\VideoStorageView.h" />
+    <QtMoc Include="source\Component\BackgroundMask\BackgroundMask.h" />
+    <QtMoc Include="source\Component\BackgroundMask\EmptyChildView.h" />
+    <QtMoc Include="source\Communication\ModbusRtuSerialClient\ModbusRtuSerialClient.h" />
+    <QtMoc Include="source\Component\TranslateComboBox\TranslateComboBox.h" />
     <ClInclude Include="source\Define\AppDefine.h" />
     <QtMoc Include="source\Manager\AppDataManager\AppDataManager.h" />
     <QtMoc Include="source\Manager\AppDataManager\APPSqlData\APPSqlData.h" />
@@ -203,6 +226,11 @@
     <QtMoc Include="source\Manager\AppDataManager\BasicSqlData\BasicSqlData.h" />
     <QtMoc Include="source\Manager\MachineManager\MachineManager.h" />
     <QtMoc Include="source\Manager\MachineManager\BasicMachine\BasicMachine.h" />
+    <QtMoc Include="source\Manager\AppDataManager\MachineDataManager\MachineDataManager.h" />
+    <QtMoc Include="source\Manager\MachineManager\RtelligentModbusMachine\RtelligentModbusMachine.h" />
+    <ClInclude Include="source\Manager\AppEnumManager\AppEnumManager.h" />
+    <QtMoc Include="source\Manager\AppEnumManager\CommonEnum\CommonEnum.h" />
+    <QtMoc Include="source\Tool\CommonTool\CommonTool.h" />
     <ClInclude Include="source\Tool\UiCommonTool\UiCommonTool.h" />
     <QtMoc Include="source\View\HomeView\HomeView.h" />
   </ItemGroup>

@@ -135,6 +135,39 @@
     <Filter Include="Source Files\Manager\MachineManager\BasicMachine">
       <UniqueIdentifier>{65cd33e4-1f34-4547-898e-53117a6f3361}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Manager\APPDataManager\MachineDataManager">
+      <UniqueIdentifier>{e50b8370-b51e-4102-9bf7-00d708f34acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\BackgroundMask">
+      <UniqueIdentifier>{1644ed39-2075-4a06-8683-a6f2bffac5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\MachineManager\RtelligentModbusMachine">
+      <UniqueIdentifier>{ddde25e1-08d5-4ab6-9b41-63e583571811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Communication\ModbusRtuSerialClient">
+      <UniqueIdentifier>{40c1fced-6135-4f8f-973b-bff0f2ff9bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectSettingsView\HardWareConfigView">
+      <UniqueIdentifier>{7b18f5dd-2513-4cd4-a34f-5dcb0997270a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView">
+      <UniqueIdentifier>{9ecf99cb-69fa-45c1-a838-549e7f3ed458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View\IntellectSettingsView\HardWareConfigView\MachineConfigView">
+      <UniqueIdentifier>{59d1ea14-4bef-4000-8e92-36f7aa17c8f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\TranslateComboBox">
+      <UniqueIdentifier>{ae42b20d-aaf8-411a-9d49-10ab7292534d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\AppEnumManager">
+      <UniqueIdentifier>{0fc318b0-dbf1-49a3-94b5-dbd4436113c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager\AppEnumManager\CommonEnum">
+      <UniqueIdentifier>{08a4b51b-218f-4510-950a-12fdb6e77579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tool\CommonTool">
+      <UniqueIdentifier>{49723ce4-757b-48b0-b9a5-8e89cfa9bde0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -239,6 +272,42 @@
     <ClCompile Include="source\Manager\MachineManager\BasicMachine\BasicMachine.cpp">
       <Filter>Source Files\Manager\MachineManager\BasicMachine</Filter>
     </ClCompile>
+    <ClCompile Include="source\Manager\AppDataManager\MachineDataManager\MachineDataManager.cpp">
+      <Filter>Source Files\Manager\APPDataManager\MachineDataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\BackgroundMask\BackgroundMask.cpp">
+      <Filter>Source Files\Component\BackgroundMask</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\BackgroundMask\EmptyChildView.cpp">
+      <Filter>Source Files\Component\BackgroundMask</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\MachineManager\RtelligentModbusMachine\RtelligentModbusMachine.cpp">
+      <Filter>Source Files\Manager\MachineManager\RtelligentModbusMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Communication\ModbusRtuSerialClient\ModbusRtuSerialClient.cpp">
+      <Filter>Source Files\Communication\ModbusRtuSerialClient</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectSettingsView\HardWareConfigView\HardWareConfigView.cpp">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView\CommunicateConfigView.cpp">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\IntellectSettingsView\HardWareConfigView\MachineConfigView\MachineConfigView.cpp">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView\MachineConfigView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Component\TranslateComboBox\TranslateComboBox.cpp">
+      <Filter>Source Files\Component\TranslateComboBox</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppEnumManager\AppEnumManager.cpp">
+      <Filter>Source Files\Manager\AppEnumManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Manager\AppEnumManager\CommonEnum\CommonEnum.cpp">
+      <Filter>Source Files\Manager\AppEnumManager\CommonEnum</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\CommonTool\CommonTool.cpp">
+      <Filter>Source Files\Tool\CommonTool</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="source\Component\PixmapWidget\PixmapWidget.h">
@@ -340,6 +409,39 @@
     <QtMoc Include="source\Manager\MachineManager\BasicMachine\BasicMachine.h">
       <Filter>Source Files\Manager\MachineManager\BasicMachine</Filter>
     </QtMoc>
+    <QtMoc Include="source\Manager\AppDataManager\MachineDataManager\MachineDataManager.h">
+      <Filter>Source Files\Manager\APPDataManager\MachineDataManager</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\BackgroundMask\BackgroundMask.h">
+      <Filter>Source Files\Component\BackgroundMask</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\BackgroundMask\EmptyChildView.h">
+      <Filter>Source Files\Component\BackgroundMask</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\MachineManager\RtelligentModbusMachine\RtelligentModbusMachine.h">
+      <Filter>Source Files\Manager\MachineManager\RtelligentModbusMachine</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Communication\ModbusRtuSerialClient\ModbusRtuSerialClient.h">
+      <Filter>Source Files\Communication\ModbusRtuSerialClient</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectSettingsView\HardWareConfigView\HardWareConfigView.h">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView\CommunicateConfigView.h">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\View\IntellectSettingsView\HardWareConfigView\MachineConfigView\MachineConfigView.h">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView\MachineConfigView</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Component\TranslateComboBox\TranslateComboBox.h">
+      <Filter>Source Files\Component\TranslateComboBox</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Manager\AppEnumManager\CommonEnum\CommonEnum.h">
+      <Filter>Source Files\Manager\AppEnumManager\CommonEnum</Filter>
+    </QtMoc>
+    <QtMoc Include="source\Tool\CommonTool\CommonTool.h">
+      <Filter>Source Files\Tool\CommonTool</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\QtIntellectNurse.ico">
@@ -399,6 +501,18 @@
     <QtUic Include="source\Component\VideoView\VideoStorageView\VideoStorageView.ui">
       <Filter>Source Files\Component\VideoView\VideoStorageView</Filter>
     </QtUic>
+    <QtUic Include="source\Component\BackgroundMask\EmptyChildView.ui">
+      <Filter>Source Files\Component\BackgroundMask</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectSettingsView\HardWareConfigView\HardWareConfigView.ui">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView\CommunicateConfigView.ui">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView\CommunicateConfigView</Filter>
+    </QtUic>
+    <QtUic Include="source\View\IntellectSettingsView\HardWareConfigView\MachineConfigView\MachineConfigView.ui">
+      <Filter>Source Files\View\IntellectSettingsView\HardWareConfigView\MachineConfigView</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Tool\UiCommonTool\UiCommonTool.h">
@@ -406,6 +520,9 @@
     </ClInclude>
     <ClInclude Include="source\Define\AppDefine.h">
       <Filter>Source Files\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Manager\AppEnumManager\AppEnumManager.h">
+      <Filter>Source Files\Manager\AppEnumManager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

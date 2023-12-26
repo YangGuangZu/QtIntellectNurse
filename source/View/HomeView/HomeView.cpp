@@ -60,7 +60,7 @@ void HomeView::initForm()
 		{
 			if (ui.buttonGroup->checkedButton() == stStatusButton.pBtn)
 			{
-				CommunicationRtu::Instance().sendCommunicationMassage(stStatusButton.start);
+				//CommunicationRtu::Instance().sendCommunicationMassage(stStatusButton.start);
 			}
 		}
 		}
@@ -71,7 +71,7 @@ void HomeView::initForm()
 		{
 			if (ui.buttonGroup->checkedButton() == stStatusButton.pBtn)
 			{
-				CommunicationRtu::Instance().sendCommunicationMassage(stStatusButton.pause);
+				//CommunicationRtu::Instance().sendCommunicationMassage(stStatusButton.pause);
 			}
 		}
 		}
@@ -82,7 +82,7 @@ void HomeView::initForm()
 		{
 			if (ui.buttonGroup->checkedButton() == stStatusButton.pBtn)
 			{
-				CommunicationRtu::Instance().sendCommunicationMassage(stStatusButton.reset);
+				//CommunicationRtu::Instance().sendCommunicationMassage(stStatusButton.reset);
 			}
 		}
 		}

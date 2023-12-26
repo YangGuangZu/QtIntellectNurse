@@ -8,6 +8,7 @@
 #include "Manager/AppDataManager/ScreenManager/ScreenManager.h"
 #include "Component/BasicPopupView/BasicPopupView.h"
 #include "Component/PopupTips/PopupManager.h"
+#include "Component/BackgroundMask/BackgroundMask.h"
 
 IntellectSettingsView::IntellectSettingsView(QWidget *parent)
 	: QWidget(parent)
@@ -26,6 +27,8 @@ void IntellectSettingsView::init()
 
 void IntellectSettingsView::initForm()
 {
+	m_HardWareConfigView = new HardWareConfigView();
+	m_HardWareConfigView->hide();
 	ui.widget->setPixmap(QPixmap(":/image/common/用户管理.png"));
 	ui.widget_4->setPixmap(QPixmap(":/image/common/用户登录.png"));
 	ui.widget_6->setPixmap(QPixmap(":/image/common/屏幕.png"));
@@ -238,39 +241,42 @@ void IntellectSettingsView::on_btnWifiEdit_clicked()
 
 void IntellectSettingsView::on_btnNetEdit_clicked()
 {
-	PopupParams stPopupParams;
-	PopupInfoParam stPopupInfoParam;
-	stPopupInfoParam.title = QStringLiteral("CAN端口:");
-	stPopupParams.append(stPopupInfoParam);
 
-	stPopupInfoParam.title = QStringLiteral("波特率:");
-	stPopupParams.append(stPopupInfoParam);
-	
-	stPopupInfoParam.title = QStringLiteral("485A端口:");
-	stPopupParams.append(stPopupInfoParam);
+	//PopupParams stPopupParams;
+	//PopupInfoParam stPopupInfoParam;
+	//stPopupInfoParam.title = QStringLiteral("CAN端口:");
+	//stPopupParams.append(stPopupInfoParam);
 
-	stPopupInfoParam.title = QStringLiteral("485A波特率:");
-	stPopupParams.append(stPopupInfoParam);
-	
-	stPopupInfoParam.title = QStringLiteral("485B端口:");
-	stPopupParams.append(stPopupInfoParam);
+	//stPopupInfoParam.title = QStringLiteral("波特率:");
+	//stPopupParams.append(stPopupInfoParam);
+	//
+	//stPopupInfoParam.title = QStringLiteral("485A端口:");
+	//stPopupParams.append(stPopupInfoParam);
 
-	stPopupInfoParam.title = QStringLiteral("485B波特率:");
-	stPopupParams.append(stPopupInfoParam);
+	//stPopupInfoParam.title = QStringLiteral("485A波特率:");
+	//stPopupParams.append(stPopupInfoParam);
+	//
+	//stPopupInfoParam.title = QStringLiteral("485B端口:");
+	//stPopupParams.append(stPopupInfoParam);
 
-	BasicPopupView PopupView(stPopupParams, QStringLiteral("通信信息修改"));
-	int res = PopupView.exec();
-	if (res == 1000)
-	{
-		PopupManager::Instance().addPopupTip(QStringLiteral("提示"), QStringLiteral("取消修改"), QtMsgType::QtFatalMsg);
-		return;
-	}
+	//stPopupInfoParam.title = QStringLiteral("485B波特率:");
+	//stPopupParams.append(stPopupInfoParam);
 
-	CommunicateManager::Instance().setCanPort(stPopupParams.at(0).content);
-	CommunicateManager::Instance().setBaudRate(stPopupParams.at(1).content);
-	CommunicateManager::Instance().setPort485A(stPopupParams.at(2).content);
-	CommunicateManager::Instance().setPort485B(stPopupParams.at(3).content);
-	CommunicateManager::Instance().setBaudRate485A(stPopupParams.at(4).content);
-	CommunicateManager::Instance().setBaudRate485B(stPopupParams.at(5).content);
-	CommunicateManager::Instance().saveConfig();
+	//BasicPopupView PopupView(stPopupParams, QStringLiteral("通信信息修改"));
+	//int res = PopupView.exec();
+	//if (res == 1000)
+	//{
+	//	PopupManager::Instance().addPopupTip(QStringLiteral("提示"), QStringLiteral("取消修改"), QtMsgType::QtFatalMsg);
+	//	return;
+	//}
+
+	//CommunicateManager::Instance().setCanPort(stPopupParams.at(0).content);
+	//CommunicateManager::Instance().setBaudRate(stPopupParams.at(1).content);
+	//CommunicateManager::Instance().setPort485A(stPopupParams.at(2).content);
+	//CommunicateManager::Instance().setPort485B(stPopupParams.at(3).content);
+	//CommunicateManager::Instance().setBaudRate485A(stPopupParams.at(4).content);
+	//CommunicateManager::Instance().setBaudRate485B(stPopupParams.at(5).content);
+	//CommunicateManager::Instance().saveConfig();
+	BackGroundMask* pBackGroundMask = BackGroundMask::getClickedBackGroundMask();
+	pBackGroundMask->addContentPtr(m_HardWareConfigView);
 }

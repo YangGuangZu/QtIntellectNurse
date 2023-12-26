@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include <QWidget>
 #include "Define/AppDefine.h"
 
 
@@ -10,8 +9,16 @@ public:
 	BasicMachine();
 	~BasicMachine() {};
 private:
+private:
 	//初始化
-	void init();
+	virtual void init() = NULL;
+public:
+	//链接
+	virtual bool connectDevice() = NULL;
+	//断开链接
+	virtual void disconnectDevice() = NULL;
+	//是否完成链接
+	virtual bool isConnectDevice() = NULL;
 signals:
 public slots:
 };

@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include <QWidget>
+#include "HardWareConfigView/HardWareConfigView.h"
 #include "ui_IntellectSettingsView.h"
 
 class IntellectSettingsView : public QWidget
@@ -13,6 +14,7 @@ public:
 
 private:
 	Ui::IntellectSettingsViewClass ui;
+	HardWareConfigView* m_HardWareConfigView = nullptr;
 private:
     //初始化
     void init();

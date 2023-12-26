@@ -19,7 +19,8 @@ QtIntellectNurse::~QtIntellectNurse()
 void QtIntellectNurse::init()
 {
 	MachineManager::Instance().init();
-	CommunicationRtu::Instance().start();
+	//CommunicationRtu::Instance().getSerialPortInfoList();
+	//CommunicationRtu::Instance().start();
 	initStyleSheet();
 	initForm();
 }

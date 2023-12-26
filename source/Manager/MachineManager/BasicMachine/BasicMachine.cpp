@@ -3,7 +3,3 @@
 BasicMachine::BasicMachine()
 {
 }
-
-void BasicMachine::init()
-{
-}
